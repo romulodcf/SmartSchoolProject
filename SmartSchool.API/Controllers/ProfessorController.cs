@@ -30,7 +30,7 @@ namespace SmartSchool.API.Controllers
         public IActionResult GetById(int id)
         {
             var professor = _context.Professores.FirstOrDefault(p => p.Id == id);
-            if(professor == null) return BadRequest("puuuts");
+            if(professor == null) return BadRequest("puusuts");
             return Ok(professor);
         }
 
